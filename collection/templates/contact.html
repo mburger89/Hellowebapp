@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+	
+	{% block title %}
+		Contact - {{ block.super }}
+	{% endblock title %}
+	</title>
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+{% block content %}
+	<h1 class="title">Contact page</h1>
+	<p>Contact content.</p>
+{% endblock content %}
+</body>
+</html>
