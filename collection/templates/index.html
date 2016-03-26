@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+{% load humanize %}
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -14,7 +15,7 @@
 <body>
 {% block content %}
 	<h1 class="title">Hello World!</h1>
-	<p>I am a basic website.</p>
+	<p> There are {{ number|apnumber }} dog{{ number| pluralize }}! </p>
 {% endblock content %}
 </body>
 </html>
